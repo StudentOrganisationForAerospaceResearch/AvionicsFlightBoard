@@ -1,0 +1,819 @@
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:AndromedaV2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "SOAR Avionics Development Board"
+Date "2017-12-03"
+Rev "1"
+Comp "SOAR"
+Comment1 "Andromeda"
+Comment2 "Garnet Tanner"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x06 J24
+U 1 1 5A1CCB4E
+P 7870 1225
+F 0 "J24" H 7870 1525 50  0000 C CNN
+F 1 "Conn_01x06" H 7870 825 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7870 1225 50  0001 C CNN
+F 3 "" H 7870 1225 50  0001 C CNN
+	1    7870 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR61
+U 1 1 5A1CCB55
+P 6945 1000
+F 0 "#PWR61" H 6945 850 50  0001 C CNN
+F 1 "+3.3V" H 6945 1140 50  0000 C CNN
+F 2 "" H 6945 1000 50  0001 C CNN
+F 3 "" H 6945 1000 50  0001 C CNN
+	1    6945 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR67
+U 1 1 5A1CCB5B
+P 7385 1225
+F 0 "#PWR67" H 7385 975 50  0001 C CNN
+F 1 "GND" H 7385 1075 50  0000 C CNN
+F 2 "" H 7385 1225 50  0001 C CNN
+F 3 "" H 7385 1225 50  0001 C CNN
+	1    7385 1225
+	1    0    0    -1  
+$EndComp
+Text Notes 7485 1855 0    59   ~ 0
+SWD Programming
+Text GLabel 6885 1125 0    39   Input ~ 0
+SWCLK
+Text GLabel 6890 1320 0    39   Input ~ 0
+SWDIO
+Text GLabel 6880 1425 0    39   Input ~ 0
+NRST
+$Comp
+L LED D5
+U 1 1 5A1CCBE8
+P 9245 1605
+F 0 "D5" H 9245 1705 50  0000 C CNN
+F 1 "LED" H 9245 1505 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9245 1605 50  0001 C CNN
+F 3 "" H 9245 1605 50  0001 C CNN
+	1    9245 1605
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR68
+U 1 1 5A1CCBEF
+P 9245 1755
+F 0 "#PWR68" H 9245 1505 50  0001 C CNN
+F 1 "GND" H 9245 1605 50  0000 C CNN
+F 2 "" H 9245 1755 50  0001 C CNN
+F 3 "" H 9245 1755 50  0001 C CNN
+	1    9245 1755
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 5A1CCBF5
+P 9245 1305
+F 0 "R15" V 9325 1305 50  0000 C CNN
+F 1 "330" V 9245 1305 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9175 1305 50  0001 C CNN
+F 3 "" H 9245 1305 50  0001 C CNN
+	1    9245 1305
+	1    0    0    -1  
+$EndComp
+Text GLabel 8995 1080 0    39   Input ~ 0
+LED1
+Text Notes 8370 2045 2    39   ~ 0
+For use with ST-Link V2 programmer\nor discovery board\n
+Text Notes 9145 880  2    39   ~ 0
+Debugging LED
+Wire Wire Line
+	9245 1080 9245 1155
+Wire Wire Line
+	8995 1080 9245 1080
+Wire Wire Line
+	6880 1425 7670 1425
+Wire Wire Line
+	6885 1125 7670 1125
+Wire Wire Line
+	7385 1225 7670 1225
+$Comp
+L Mounting_Hole_PAD MK4
+U 1 1 5A232D99
+P 3600 6600
+F 0 "MK4" H 3600 6850 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 2900 6020 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3600 6600 50  0001 C CNN
+F 3 "" H 3600 6600 50  0001 C CNN
+	1    3600 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole_PAD MK3
+U 1 1 5A232E91
+P 3400 6600
+F 0 "MK3" H 3400 6850 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 2900 6115 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3400 6600 50  0001 C CNN
+F 3 "" H 3400 6600 50  0001 C CNN
+	1    3400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole_PAD MK2
+U 1 1 5A232EE1
+P 3200 6600
+F 0 "MK2" H 3200 6850 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 2900 6210 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3200 6600 50  0001 C CNN
+F 3 "" H 3200 6600 50  0001 C CNN
+	1    3200 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole_PAD MK1
+U 1 1 5A232F32
+P 3000 6600
+F 0 "MK1" H 3000 6850 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 2910 6310 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3000 6600 50  0001 C CNN
+F 3 "" H 3000 6600 50  0001 C CNN
+	1    3000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR58
+U 1 1 5A232F6C
+P 3800 6700
+F 0 "#PWR58" H 3800 6450 50  0001 C CNN
+F 1 "GND" H 3800 6550 50  0000 C CNN
+F 2 "" H 3800 6700 50  0001 C CNN
+F 3 "" H 3800 6700 50  0001 C CNN
+	1    3800 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6700 3800 6700
+Connection ~ 3200 6700
+Connection ~ 3400 6700
+Connection ~ 3600 6700
+Text Notes 2920 6845 0    39   ~ 0
+Mounting Holes
+$Comp
+L LED D6
+U 1 1 5A527A4C
+P 9945 1605
+F 0 "D6" H 9945 1705 50  0000 C CNN
+F 1 "LED" H 9945 1505 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9945 1605 50  0001 C CNN
+F 3 "" H 9945 1605 50  0001 C CNN
+	1    9945 1605
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR69
+U 1 1 5A527A52
+P 9945 1755
+F 0 "#PWR69" H 9945 1505 50  0001 C CNN
+F 1 "GND" H 9945 1605 50  0000 C CNN
+F 2 "" H 9945 1755 50  0001 C CNN
+F 3 "" H 9945 1755 50  0001 C CNN
+	1    9945 1755
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 5A527A58
+P 9945 1305
+F 0 "R16" V 10025 1305 50  0000 C CNN
+F 1 "330" V 9945 1305 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9875 1305 50  0001 C CNN
+F 3 "" H 9945 1305 50  0001 C CNN
+	1    9945 1305
+	1    0    0    -1  
+$EndComp
+Text GLabel 9695 1080 0    39   Input ~ 0
+LED2
+Wire Wire Line
+	9945 1080 9945 1155
+Wire Wire Line
+	9695 1080 9945 1080
+$Comp
+L Conn_01x04 J19
+U 1 1 5AD31FAA
+P 1085 1495
+F 0 "J19" H 1085 1695 50  0000 C CNN
+F 1 "Radio" H 1085 1195 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1085 1495 50  0001 C CNN
+F 3 "" H 1085 1495 50  0001 C CNN
+	1    1085 1495
+	-1   0    0    1   
+$EndComp
+Text Notes 1010 1840 0    60   ~ 0
+Radio
+$Comp
+L Conn_01x04 J18
+U 1 1 5AD320F6
+P 1080 2300
+F 0 "J18" H 1080 2500 50  0000 C CNN
+F 1 "GPS" H 1080 2000 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1080 2300 50  0001 C CNN
+F 3 "" H 1080 2300 50  0001 C CNN
+	1    1080 2300
+	-1   0    0    1   
+$EndComp
+Text Notes 1025 2685 0    60   ~ 0
+GPS
+$Comp
+L Conn_01x04 J20
+U 1 1 5AD321BE
+P 1110 3100
+F 0 "J20" H 1110 3300 50  0000 C CNN
+F 1 "Recovery" H 1110 2800 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1110 3100 50  0001 C CNN
+F 3 "" H 1110 3100 50  0001 C CNN
+	1    1110 3100
+	-1   0    0    1   
+$EndComp
+Text Notes 815  4260 0    60   ~ 0
+Propulsion Control
+$Comp
+L Conn_01x04 J21
+U 1 1 5AD322FA
+P 1130 3900
+F 0 "J21" H 1130 4100 50  0000 C CNN
+F 1 "Propulsion" H 1130 3600 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1130 3900 50  0001 C CNN
+F 3 "" H 1130 3900 50  0001 C CNN
+	1    1130 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x04 J22
+U 1 1 5AD32646
+P 1145 4820
+F 0 "J22" H 1145 5020 50  0000 C CNN
+F 1 "Tank Pressure" H 1145 4520 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1145 4820 50  0001 C CNN
+F 3 "" H 1145 4820 50  0001 C CNN
+	1    1145 4820
+	-1   0    0    1   
+$EndComp
+Text Notes 775  5210 0    60   ~ 0
+High Pressure Sensor
+$Comp
+L Conn_01x04 J23
+U 1 1 5AD3281F
+P 1190 5735
+F 0 "J23" H 1190 5935 50  0000 C CNN
+F 1 "Low Pressure" H 1190 5435 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 1190 5735 50  0001 C CNN
+F 3 "" H 1190 5735 50  0001 C CNN
+	1    1190 5735
+	-1   0    0    1   
+$EndComp
+Text Notes 815  6110 0    60   ~ 0
+Low Pressure Sensor
+Text Notes 7515 4305 0    60   ~ 0
+Launch Systems
+$Comp
+L Conn_01x06 J27
+U 1 1 5AD330DF
+P 7935 4850
+F 0 "J27" H 7935 5150 50  0000 C CNN
+F 1 "SD" H 7935 4450 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal" H 7935 4850 50  0001 C CNN
+F 3 "" H 7935 4850 50  0001 C CNN
+	1    7935 4850
+	1    0    0    -1  
+$EndComp
+Text Notes 7735 5465 0    60   ~ 0
+SD Card
+$Comp
+L Conn_01x04 J25
+U 1 1 5AD333C9
+P 7920 2625
+F 0 "J25" H 7920 2825 50  0000 C CNN
+F 1 "Battery" H 7920 2325 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal" H 7920 2625 50  0001 C CNN
+F 3 "" H 7920 2625 50  0001 C CNN
+	1    7920 2625
+	1    0    0    -1  
+$EndComp
+Text Notes 7555 3145 0    60   ~ 0
+Power - To Battery Board
+Wire Wire Line
+	6890 1325 7670 1325
+Wire Wire Line
+	6890 1325 6890 1320
+Wire Wire Line
+	7670 1025 6945 1025
+Wire Wire Line
+	6945 1025 6945 1000
+Wire Wire Line
+	6875 1525 7670 1525
+Text GLabel 6875 1525 0    39   Input ~ 0
+SWO
+$Comp
+L GND #PWR63
+U 1 1 5AD3489D
+P 7030 2625
+F 0 "#PWR63" H 7030 2375 50  0001 C CNN
+F 1 "GND" H 7030 2475 50  0000 C CNN
+F 2 "" H 7030 2625 50  0001 C CNN
+F 3 "" H 7030 2625 50  0001 C CNN
+	1    7030 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7030 2625 7720 2625
+Wire Wire Line
+	7720 2525 7085 2525
+Wire Wire Line
+	7085 2525 7085 2625
+Connection ~ 7085 2625
+$Comp
+L +12V #PWR60
+U 1 1 5AD34D14
+P 6670 2590
+F 0 "#PWR60" H 6670 2440 50  0001 C CNN
+F 1 "+12V" H 6670 2730 50  0000 C CNN
+F 2 "" H 6670 2590 50  0001 C CNN
+F 3 "" H 6670 2590 50  0001 C CNN
+	1    6670 2590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7720 2725 6670 2725
+Wire Wire Line
+	6670 2725 6670 2590
+$Comp
+L +BATT #PWR59
+U 1 1 5AD34E7A
+P 6410 2590
+F 0 "#PWR59" H 6410 2440 50  0001 C CNN
+F 1 "+BATT" H 6410 2730 50  0000 C CNN
+F 2 "" H 6410 2590 50  0001 C CNN
+F 3 "" H 6410 2590 50  0001 C CNN
+	1    6410 2590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7720 2825 6410 2825
+Wire Wire Line
+	6410 2825 6410 2590
+Text Notes 905  3440 0    60   ~ 0
+Recovery
+Text Notes 780  4950 0    39   ~ 0
+Power
+Text Notes 775  4845 0    39   ~ 0
+Gnd\n
+Text Notes 775  4640 0    39   ~ 0
+V+
+Text Notes 775  4745 0    39   ~ 0
+V-
+Text Notes 750  5875 0    39   ~ 0
+Power
+Text Notes 745  5770 0    39   ~ 0
+Gnd\n
+Text Notes 760  5560 0    39   ~ 0
+V+
+Text Notes 755  5665 0    39   ~ 0
+V-
+$Comp
+L +12V #PWR65
+U 1 1 5AE4DB94
+P 7225 3990
+F 0 "#PWR65" H 7225 3840 50  0001 C CNN
+F 1 "+12V" H 7225 4130 50  0000 C CNN
+F 2 "" H 7225 3990 50  0001 C CNN
+F 3 "" H 7225 3990 50  0001 C CNN
+	1    7225 3990
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR62
+U 1 1 5AE4DC65
+P 6975 3880
+F 0 "#PWR62" H 6975 3630 50  0001 C CNN
+F 1 "GND" H 6975 3730 50  0000 C CNN
+F 2 "" H 6975 3880 50  0001 C CNN
+F 3 "" H 6975 3880 50  0001 C CNN
+	1    6975 3880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7725 3990 7225 3990
+Wire Wire Line
+	6975 3790 7725 3790
+Wire Wire Line
+	6975 3790 6975 3880
+Wire Wire Line
+	7730 3890 7595 3890
+Wire Wire Line
+	7595 3890 7595 3790
+Connection ~ 7595 3790
+$Comp
+L +5V #PWR55
+U 1 1 5AE4DF2A
+P 1985 4820
+F 0 "#PWR55" H 1985 4670 50  0001 C CNN
+F 1 "+5V" H 1985 4960 50  0000 C CNN
+F 2 "" H 1985 4820 50  0001 C CNN
+F 3 "" H 1985 4820 50  0001 C CNN
+	1    1985 4820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4920 1985 4920
+Wire Wire Line
+	1985 4920 1985 4820
+$Comp
+L +5V #PWR53
+U 1 1 5AE4E058
+P 1810 5815
+F 0 "#PWR53" H 1810 5665 50  0001 C CNN
+F 1 "+5V" H 1810 5955 50  0000 C CNN
+F 2 "" H 1810 5815 50  0001 C CNN
+F 3 "" H 1810 5815 50  0001 C CNN
+	1    1810 5815
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1390 5835 1810 5835
+Wire Wire Line
+	1810 5835 1810 5815
+$Comp
+L +3.3V #PWR56
+U 1 1 5AE4E27F
+P 2095 2320
+F 0 "#PWR56" H 2095 2170 50  0001 C CNN
+F 1 "+3.3V" H 2095 2460 50  0000 C CNN
+F 2 "" H 2095 2320 50  0001 C CNN
+F 3 "" H 2095 2320 50  0001 C CNN
+	1    2095 2320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1280 2400 2095 2400
+Wire Wire Line
+	2095 2400 2095 2320
+Wire Wire Line
+	1285 1595 1975 1595
+Wire Wire Line
+	1975 1595 1975 1510
+$Comp
+L +5VP #PWR54
+U 1 1 5AE4E9E1
+P 1975 1510
+F 0 "#PWR54" H 1975 1360 50  0001 C CNN
+F 1 "+5VP" H 1975 1650 50  0000 C CNN
+F 2 "" H 1975 1510 50  0001 C CNN
+F 3 "" H 1975 1510 50  0001 C CNN
+	1    1975 1510
+	1    0    0    -1  
+$EndComp
+Text GLabel 1355 1395 2    39   Input ~ 0
+UART1_TX
+Wire Wire Line
+	1285 1295 1350 1295
+Text GLabel 1350 1295 2    39   Input ~ 0
+UART1_RX
+Wire Wire Line
+	1285 1395 1355 1395
+Text Notes 1700 1210 0    39   ~ 0
+5V from buck regulator
+$Comp
+L GND #PWR49
+U 1 1 5AE61EA5
+P 1455 1650
+F 0 "#PWR49" H 1455 1400 50  0001 C CNN
+F 1 "GND" H 1455 1500 50  0000 C CNN
+F 2 "" H 1455 1650 50  0001 C CNN
+F 3 "" H 1455 1650 50  0001 C CNN
+	1    1455 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1285 1495 1455 1495
+Wire Wire Line
+	1455 1495 1455 1650
+Text GLabel 1405 2100 2    39   Input ~ 0
+UART4_RX
+Wire Wire Line
+	1280 2100 1405 2100
+Text GLabel 1410 2200 2    39   Input ~ 0
+UART4_TX
+Wire Wire Line
+	1280 2200 1410 2200
+$Comp
+L GND #PWR48
+U 1 1 5AE623C9
+P 1395 2455
+F 0 "#PWR48" H 1395 2205 50  0001 C CNN
+F 1 "GND" H 1395 2305 50  0000 C CNN
+F 2 "" H 1395 2455 50  0001 C CNN
+F 3 "" H 1395 2455 50  0001 C CNN
+	1    1395 2455
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1280 2300 1395 2300
+Wire Wire Line
+	1395 2300 1395 2455
+Text GLabel 7495 3590 0    39   Input ~ 0
+UART2_TX
+Wire Wire Line
+	7495 3590 7725 3590
+Text GLabel 7505 3690 0    39   Input ~ 0
+UART2_RX
+Wire Wire Line
+	7725 3690 7505 3690
+Text GLabel 7445 3490 0    39   Input ~ 0
+LAUNCH
+$Comp
+L Conn_01x06 J26
+U 1 1 5AD3296F
+P 7925 3690
+F 0 "J26" H 7925 3990 50  0000 C CNN
+F 1 "Launch Systems" H 7925 3290 50  0000 C CNN
+F 2 "SOAR_Library:Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal" H 7925 3690 50  0001 C CNN
+F 3 "" H 7925 3690 50  0001 C CNN
+	1    7925 3690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7445 3490 7725 3490
+$Comp
+L +3.3V #PWR66
+U 1 1 5AE63A29
+P 7325 4580
+F 0 "#PWR66" H 7325 4430 50  0001 C CNN
+F 1 "+3.3V" H 7325 4720 50  0000 C CNN
+F 2 "" H 7325 4580 50  0001 C CNN
+F 3 "" H 7325 4580 50  0001 C CNN
+	1    7325 4580
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR64
+U 1 1 5AE63AB9
+P 7055 4825
+F 0 "#PWR64" H 7055 4575 50  0001 C CNN
+F 1 "GND" H 7055 4675 50  0000 C CNN
+F 2 "" H 7055 4825 50  0001 C CNN
+F 3 "" H 7055 4825 50  0001 C CNN
+	1    7055 4825
+	1    0    0    -1  
+$EndComp
+Text GLabel 7655 4850 0    39   Input ~ 0
+SPI3_SCK
+Text GLabel 7675 4950 0    39   Input ~ 0
+SPI3_MOSI
+Wire Wire Line
+	7735 4950 7675 4950
+Wire Wire Line
+	7735 4850 7655 4850
+Text GLabel 7670 5050 0    39   Input ~ 0
+SPI3_MISO
+Wire Wire Line
+	7735 5050 7670 5050
+Text GLabel 7630 5150 0    39   Input ~ 0
+SD2_~CS
+Wire Wire Line
+	7735 5150 7630 5150
+Wire Wire Line
+	7735 4650 7325 4650
+Wire Wire Line
+	7325 4650 7325 4580
+Wire Wire Line
+	7735 4750 7055 4750
+Wire Wire Line
+	7055 4750 7055 4825
+Text GLabel 1405 2900 2    39   Input ~ 0
+RECOVERY_1
+Text GLabel 1410 3000 2    39   Input ~ 0
+RECOVERY_2
+Wire Wire Line
+	1405 2900 1310 2900
+Wire Wire Line
+	1410 3000 1310 3000
+Wire Wire Line
+	1410 3100 1310 3100
+$Comp
+L GND #PWR50
+U 1 1 5AE65476
+P 1520 3230
+F 0 "#PWR50" H 1520 2980 50  0001 C CNN
+F 1 "GND" H 1520 3080 50  0000 C CNN
+F 2 "" H 1520 3230 50  0001 C CNN
+F 3 "" H 1520 3230 50  0001 C CNN
+	1    1520 3230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1310 3200 1520 3200
+Wire Wire Line
+	1520 3200 1520 3230
+Wire Wire Line
+	1410 3100 1410 3200
+Connection ~ 1410 3200
+$Comp
+L R R14
+U 1 1 5AE65F32
+P 2315 5880
+F 0 "R14" V 2395 5880 50  0000 C CNN
+F 1 "133K" V 2315 5880 50  0000 C CNN
+F 2 "" V 2245 5880 50  0001 C CNN
+F 3 "" H 2315 5880 50  0001 C CNN
+	1    2315 5880
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 5AE65FC4
+P 2315 5380
+F 0 "R13" V 2395 5380 50  0000 C CNN
+F 1 "100K" V 2315 5380 50  0000 C CNN
+F 2 "" V 2245 5380 50  0001 C CNN
+F 3 "" H 2315 5380 50  0001 C CNN
+	1    2315 5380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2315 5530 2315 5730
+Text GLabel 2425 5620 2    39   Input ~ 0
+ADC1
+Wire Wire Line
+	2425 5620 2315 5620
+Wire Wire Line
+	2315 5620 2315 5615
+Connection ~ 2315 5615
+Wire Wire Line
+	1390 5535 1790 5535
+Wire Wire Line
+	1790 5535 1790 5140
+Wire Wire Line
+	1790 5140 2315 5140
+Wire Wire Line
+	2315 5140 2315 5230
+$Comp
+L GND #PWR52
+U 1 1 5AE66C67
+P 1585 5870
+F 0 "#PWR52" H 1585 5620 50  0001 C CNN
+F 1 "GND" H 1585 5720 50  0000 C CNN
+F 2 "" H 1585 5870 50  0001 C CNN
+F 3 "" H 1585 5870 50  0001 C CNN
+	1    1585 5870
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1390 5635 1585 5635
+Wire Wire Line
+	1585 5635 1585 5870
+Wire Wire Line
+	1390 5735 1585 5735
+Connection ~ 1585 5735
+$Comp
+L GND #PWR57
+U 1 1 5AE66F90
+P 2315 6075
+F 0 "#PWR57" H 2315 5825 50  0001 C CNN
+F 1 "GND" H 2315 5925 50  0000 C CNN
+F 2 "" H 2315 6075 50  0001 C CNN
+F 3 "" H 2315 6075 50  0001 C CNN
+	1    2315 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2315 6030 2315 6075
+Text GLabel 1440 3700 2    39   Input ~ 0
+PROPULSION1
+Text GLabel 1440 3800 2    39   Input ~ 0
+PROPULSION2
+Wire Wire Line
+	1330 3800 1440 3800
+Wire Wire Line
+	1330 3700 1420 3700
+$Comp
+L GND #PWR51
+U 1 1 5AE67859
+P 1535 4000
+F 0 "#PWR51" H 1535 3750 50  0001 C CNN
+F 1 "GND" H 1535 3850 50  0000 C CNN
+F 2 "" H 1535 4000 50  0001 C CNN
+F 3 "" H 1535 4000 50  0001 C CNN
+	1    1535 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1330 3900 1535 3900
+Wire Wire Line
+	1535 3900 1535 4000
+Wire Wire Line
+	1330 3995 1535 3995
+Connection ~ 1535 3995
+$EndSCHEMATC

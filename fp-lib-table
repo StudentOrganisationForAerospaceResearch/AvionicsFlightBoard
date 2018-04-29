@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name SOAR_Library)(type KiCad)(uri "$(KIPRJMOD)/SOAR_Library.pretty")(options "")(descr ""))
+  (lib (name SOAR_Lib)(type KiCad)(uri C:/Users/gtann/Documents/SOAR/SOAR_Lib.pretty)(options "")(descr ""))
+)
