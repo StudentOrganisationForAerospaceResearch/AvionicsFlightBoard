@@ -175,8 +175,6 @@ F 3 "" H 1085 1495 50  0001 C CNN
 	1    1085 1495
 	-1   0    0    1   
 $EndComp
-Text Notes 1010 1840 0    60   ~ 0
-Radio
 $Comp
 L Conn_01x04 J18
 U 1 1 5AD320F6
@@ -188,8 +186,6 @@ F 3 "" H 1080 2300 50  0001 C CNN
 	1    1080 2300
 	-1   0    0    1   
 $EndComp
-Text Notes 1025 2685 0    60   ~ 0
-GPS
 $Comp
 L Conn_01x04 J20
 U 1 1 5AD321BE
@@ -201,8 +197,6 @@ F 3 "" H 1110 3100 50  0001 C CNN
 	1    1110 3100
 	-1   0    0    1   
 $EndComp
-Text Notes 815  4260 0    60   ~ 0
-Propulsion Control
 $Comp
 L Conn_01x04 J21
 U 1 1 5AD322FA
@@ -225,8 +219,6 @@ F 3 "" H 1145 4820 50  0001 C CNN
 	1    1145 4820
 	-1   0    0    1   
 $EndComp
-Text Notes 775  5210 0    60   ~ 0
-High Pressure Sensor
 $Comp
 L Conn_01x04 J23
 U 1 1 5AD3281F
@@ -238,10 +230,8 @@ F 3 "" H 1190 5735 50  0001 C CNN
 	1    1190 5735
 	-1   0    0    1   
 $EndComp
-Text Notes 815  6110 0    60   ~ 0
+Text Notes 800  6300 0    60   ~ 0
 Low Pressure Sensor
-Text Notes 7515 4305 0    60   ~ 0
-Launch Systems
 $Comp
 L Conn_01x06 J27
 U 1 1 5AD330DF
@@ -253,8 +243,6 @@ F 3 "" H 7935 4850 50  0001 C CNN
 	1    7935 4850
 	1    0    0    -1  
 $EndComp
-Text Notes 7735 5465 0    60   ~ 0
-SD Card
 $Comp
 L Conn_01x04 J25
 U 1 1 5AD333C9
@@ -266,8 +254,6 @@ F 3 "" H 7920 2625 50  0001 C CNN
 	1    7920 2625
 	1    0    0    -1  
 $EndComp
-Text Notes 7555 3145 0    60   ~ 0
-Power - To Battery Board
 Text GLabel 6875 1525 0    39   Input ~ 0
 SWO
 $Comp
@@ -303,8 +289,6 @@ F 3 "" H 6410 2590 50  0001 C CNN
 	1    6410 2590
 	1    0    0    -1  
 $EndComp
-Text Notes 905  3440 0    60   ~ 0
-Recovery
 Text Notes 780  4950 0    39   ~ 0
 Power
 Text Notes 775  4845 0    39   ~ 0
@@ -569,7 +553,7 @@ L GND #PWR071
 U 1 1 5AF14FE9
 P 3170 4470
 F 0 "#PWR071" H 3170 4220 50  0001 C CNN
-F 1 "GND" H 3170 4320 50  0000 C CNN
+F 1 "GND" H 3295 4460 50  0000 C CNN
 F 2 "" H 3170 4470 50  0001 C CNN
 F 3 "" H 3170 4470 50  0001 C CNN
 	1    3170 4470
@@ -635,12 +619,12 @@ ADC2
 $Comp
 L GND #PWR075
 U 1 1 5AF171BE
-P 2515 4910
-F 0 "#PWR075" H 2515 4660 50  0001 C CNN
-F 1 "GND" H 2515 4760 50  0000 C CNN
-F 2 "" H 2515 4910 50  0001 C CNN
-F 3 "" H 2515 4910 50  0001 C CNN
-	1    2515 4910
+P 2515 5060
+F 0 "#PWR075" H 2515 4810 50  0001 C CNN
+F 1 "GND" H 2515 4910 50  0000 C CNN
+F 2 "" H 2515 5060 50  0001 C CNN
+F 3 "" H 2515 5060 50  0001 C CNN
+	1    2515 5060
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -654,19 +638,6 @@ F 3 "" H 1585 4955 50  0001 C CNN
 	1    1585 4955
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR077
-U 1 1 5AF17BF2
-P 2685 4955
-F 0 "#PWR077" H 2685 4705 50  0001 C CNN
-F 1 "GND" H 2685 4805 50  0000 C CNN
-F 2 "" H 2685 4955 50  0001 C CNN
-F 3 "" H 2685 4955 50  0001 C CNN
-	1    2685 4955
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2870 4955 2685 4955
 Connection ~ 1585 4820
 Wire Wire Line
 	1345 4820 1585 4820
@@ -681,7 +652,7 @@ Wire Wire Line
 Wire Wire Line
 	2570 4455 1540 4455
 Wire Wire Line
-	2515 4855 2515 4910
+	2515 4855 2515 5060
 Wire Wire Line
 	2570 4855 2515 4855
 Connection ~ 3750 4655
@@ -870,8 +841,8 @@ $Comp
 L C C34
 U 1 1 5AF1AA5A
 P 2955 5180
-F 0 "C34" H 2980 5280 50  0000 L CNN
-F 1 "0.5nF" H 2980 5080 50  0000 L CNN
+F 0 "C34" H 2775 5285 50  0000 L CNN
+F 1 "0.5nF" H 2720 5090 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2993 5030 50  0001 C CNN
 F 3 "" H 2955 5180 50  0001 C CNN
 	1    2955 5180
@@ -959,4 +930,42 @@ Wire Wire Line
 Wire Wire Line
 	3155 5360 3155 5330
 Connection ~ 3050 5360
+Text Notes 850  6500 0    39   ~ 0
+SSI P51-300\n0.5 - 4.5V Output
+Text Notes 2650 5800 0    39   ~ 0
+P = (V+ - 0.5V) * 300PSI/4V\nADC1 = V+ * 133K/233K
+Wire Wire Line
+	2515 4955 2870 4955
+Connection ~ 2515 4955
+Text Notes 3565 4410 0    39   ~ 0
+ADC2 = 2* 200K/13K* V+
+Text Notes 3605 4220 0    39   ~ 0
+P = V+ * 1000PSI/0.1V
+$Comp
+L D_TVS D?
+U 1 1 5AF20F24
+P 6580 3045
+F 0 "D?" H 6580 3145 50  0000 C CNN
+F 1 "D_TVS" H 6580 2945 50  0000 C CNN
+F 2 "" H 6580 3045 50  0001 C CNN
+F 3 "" H 6580 3045 50  0001 C CNN
+	1    6580 3045
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6580 2895 6580 2825
+Connection ~ 6580 2825
+$Comp
+L GND #PWR?
+U 1 1 5AF211F1
+P 6580 3250
+F 0 "#PWR?" H 6580 3000 50  0001 C CNN
+F 1 "GND" H 6580 3100 50  0000 C CNN
+F 2 "" H 6580 3250 50  0001 C CNN
+F 3 "" H 6580 3250 50  0001 C CNN
+	1    6580 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6580 3195 6580 3250
 $EndSCHEMATC
