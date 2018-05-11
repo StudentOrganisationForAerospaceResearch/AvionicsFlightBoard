@@ -72,5 +72,5 @@ F0 "Headers and Debug" 39
 F1 "Headerssch.sch" 39
 $EndSheet
 Text Notes 6485 4980 0    118  ~ 0
-TO DO:\n\n-Fix sheet file names
+TO DO:\n\nStiching around edge for EMI\n\n\n-Fix sheet file names
 $EndSCHEMATC
